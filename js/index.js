@@ -39,22 +39,24 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-const header = document.querySelector('header');
-const nav = header.querySelector('a');
-const ctaBase = document.querySelector('.cta');
-const ctaText = cta.querySelector('.cta-text');
-const ctaImg = cta.querySelector('cta-img');
+// const header = document.querySelector('header');
+// const nav = header.querySelector('a');
+// const ctaBase = document.querySelector('.cta');
+// const ctaText = cta.querySelector('.cta-text');
+const ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+// const mainSection = document.querySelector('.main-content');
+// const topCont = mainSection.querySelector('.top-content');
+// const topCont = mainSection.querySelector('.top-content');
+const middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+// const BtmCont = mainSection.querySelector('.bottom-content');
 
-const mainSection = document.querySelector('.main-content');
-const topCont = mainSection.querySelector('.top-content');
-const topCont = mainSection.querySelector('.top-content');
-const middleImg = mainSection.querySelector('.middle-img');
-const BtmCont = mainSection.querySelector('.bottom-content');
+// const contactSec = document.querySelector('.contact');
+// const contactSec = document.querySelector('footer');
 
-const contactSec = document.querySelector('.contact');
-const contactSec = document.querySelector('footer');
 
 
 
