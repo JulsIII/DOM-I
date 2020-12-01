@@ -38,6 +38,7 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+//IMGs
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
@@ -47,6 +48,7 @@ ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 const middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+//NAV
 const links = document.querySelectorAll('nav a');
 links[0].textContent = siteContent['nav']['nav-item-1'];
 links[1].textContent = siteContent['nav']['nav-item-2'];
@@ -75,6 +77,7 @@ document.querySelector('nav').appendChild(vlogLink);
 blogLink.style.color = '#00FF00';
 vlogLink.style.color = '#00FF00';
 
+//BODYCONTENT
 const ctaText = document.querySelector("h1");
 ctaText.textContent = siteContent["cta"]["h1"]
 ctaText.innerHTML = "DOM <br> IS <br> AWESOME";
