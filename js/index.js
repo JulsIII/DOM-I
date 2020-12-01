@@ -65,16 +65,36 @@ const ctaCont= document.querySelector('.cta-text');
 const ctaButton = ctaCont.querySelector('button');
 ctaButton.textContent = siteContent["cta"]["button"];
 
-// const mainSection = document.querySelector('.main-content');
-// const topCont = mainSection.querySelector('.top-content');
-// const topCont = mainSection.querySelector('.top-content');
+
+const mainSection = document.querySelector('.main-content');
+const topCont = mainSection.querySelector('.top-content');
+
+const textOneA = topCont.querySelector('.text-content');
+const hachFourA = textOneA.querySelector('h4');
+const pEEA = textOneA.querySelector('p');
+hachFourA.textContent = siteContent["main-content"]["features-h4"];
+pEEA.textContent = siteContent["main-content"]["features-content"];
+
+
+
+const hachFourB = topCont.querySelectorAll('h4');
+const pEEB = topCont.querySelectorAll('p');
+hachFourB[1].textContent = siteContent["main-content"]["about-h4"];
+pEEB[1].textContent = siteContent["main-content"]["about-content"];
+
+
+// const hachFourB = hachFourA.nextElementSibling;
+// const pEEB = hachFourB.nextElementSibling;
+// const secondconT = textOneA.cloneNode(true);
+// document.querySelector('.text-content').appendChild(secondconT);
+
+// querySelector('h4');
+// const pEEB = textOneB.querySelector('p');
+
 
 // const BtmCont = mainSection.querySelector('.bottom-content');
-
+// const textOneB = BtmCont.querySelector('.text-content');
+// const textOne
 // const contactSec = document.querySelector('.contact');
 // const contactSec = document.querySelector('footer');
 // const button = document.querySelector('button');
-// button.textContent = siteContent['cta']['button'];
-// ctaImg.setAttribute('alt', 'Another image of a code snippet');
-
-
