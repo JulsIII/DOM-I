@@ -55,7 +55,25 @@ links[3].textContent = siteContent['nav']['nav-item-4'];
 links[4].textContent = siteContent['nav']['nav-item-5'];
 links[5].textContent = siteContent['nav']['nav-item-6'];
 
-// const header = document.querySelector('header');
+links[0].style.color = '#00FF00';
+links[1].style.color = '#00FF00';
+links[2].style.color = '#00FF00';
+links[3].style.color = '#00FF00';
+links[4].style.color = '#00FF00';
+links[5].style.color = '#00FF00';
+
+const blogLink = document.createElement('a');
+blogLink.textContent = 'Blog';
+blogLink.href = '#';
+document.querySelector('nav').appendChild(blogLink);
+
+const vlogLink = document.createElement('a');
+vlogLink.textContent = 'Vlog';
+vlogLink.href = '#';
+document.querySelector('nav').appendChild(vlogLink);
+
+blogLink.style.color = '#00FF00';
+vlogLink.style.color = '#00FF00';
 
 const ctaText = document.querySelector("h1");
 ctaText.textContent = siteContent["cta"]["h1"]
@@ -68,7 +86,6 @@ ctaButton.textContent = siteContent["cta"]["button"];
 const mainSection = document.querySelector('.main-content');
 
 const topCont = mainSection.querySelector('.top-content');
-
 const featTitle = topCont.querySelectorAll('h4');
 const featText = topCont.querySelectorAll('p');
 featTitle[0].textContent = siteContent["main-content"]["features-h4"];
@@ -79,9 +96,7 @@ const aboutText = topCont.querySelectorAll('p');
 aboutTitle[1].textContent = siteContent["main-content"]["about-h4"];
 aboutText[1].textContent = siteContent["main-content"]["about-content"];
 
-
 const BtmCont = mainSection.querySelector('.bottom-content');
-
 const serTitle = BtmCont.querySelectorAll('h4');
 const serText = BtmCont.querySelectorAll('p');
 serTitle[0].textContent = siteContent["main-content"]["services-h4"];
@@ -97,6 +112,17 @@ const visText = BtmCont.querySelectorAll('p');
 visTitle[2].textContent = siteContent["main-content"]["vision-h4"];
 visText[2].textContent = siteContent["main-content"]["vision-content"];
 
-// const contactSec = document.querySelector('.contact');
-// const contactSec = document.querySelector('footer');
-// const button = document.querySelector('button');
+const contactSec = document.querySelector('.contact');
+const conTitle = contactSec.querySelector('h4');
+conTitle.textContent = siteContent["contact"]["contact-h4"];
+const conInfo = contactSec.querySelectorAll('p');
+conInfo[0].textContent = siteContent["contact"]["address"];
+conInfo[0].style.width = '200px';
+conInfo[1].textContent = siteContent["contact"]["phone"];
+conInfo[2].textContent = siteContent["contact"]["email"];
+
+const copyWright = document.querySelector('footer');
+const copyWText = copyWright.querySelector('p');
+copyWText.textContent = siteContent["footer"]["copyright"];
+
+
