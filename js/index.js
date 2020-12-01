@@ -41,22 +41,40 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-// const header = document.querySelector('header');
-// const nav = header.querySelector('a');
-// const ctaBase = document.querySelector('.cta');
-// const ctaText = cta.querySelector('.cta-text');
 const ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+const middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+const links = document.querySelectorAll('nav a');
+links[0].textContent = siteContent['nav']['nav-item-1'];
+links[1].textContent = siteContent['nav']['nav-item-2'];
+links[2].textContent = siteContent['nav']['nav-item-3'];
+links[3].textContent = siteContent['nav']['nav-item-4'];
+links[4].textContent = siteContent['nav']['nav-item-5'];
+links[5].textContent = siteContent['nav']['nav-item-6'];
+
+// const header = document.querySelector('header');
+
+const ctaText = document.querySelector("h1");
+ctaText.textContent = siteContent["cta"]["h1"]
+ctaText.innerHTML = "DOM <br> IS <br> AWESOME";
+
+const ctaCont= document.querySelector('.cta-text');
+const ctaButton = ctaCont.querySelector('button');
+ctaButton.textContent = siteContent["cta"]["button"];
+
 // const mainSection = document.querySelector('.main-content');
 // const topCont = mainSection.querySelector('.top-content');
 // const topCont = mainSection.querySelector('.top-content');
-const middleImg = document.getElementById("middle-img");
-middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
 // const BtmCont = mainSection.querySelector('.bottom-content');
 
 // const contactSec = document.querySelector('.contact');
 // const contactSec = document.querySelector('footer');
-
-
+// const button = document.querySelector('button');
+// button.textContent = siteContent['cta']['button'];
+// ctaImg.setAttribute('alt', 'Another image of a code snippet');
 
 
