@@ -65,36 +65,38 @@ const ctaCont= document.querySelector('.cta-text');
 const ctaButton = ctaCont.querySelector('button');
 ctaButton.textContent = siteContent["cta"]["button"];
 
-
 const mainSection = document.querySelector('.main-content');
+
 const topCont = mainSection.querySelector('.top-content');
 
-const textOneA = topCont.querySelector('.text-content');
-const hachFourA = textOneA.querySelector('h4');
-const pEEA = textOneA.querySelector('p');
-hachFourA.textContent = siteContent["main-content"]["features-h4"];
-pEEA.textContent = siteContent["main-content"]["features-content"];
+const featTitle = topCont.querySelectorAll('h4');
+const featText = topCont.querySelectorAll('p');
+featTitle[0].textContent = siteContent["main-content"]["features-h4"];
+featText[0].textContent = siteContent["main-content"]["features-content"];
+
+const aboutTitle = topCont.querySelectorAll('h4');
+const aboutText = topCont.querySelectorAll('p');
+aboutTitle[1].textContent = siteContent["main-content"]["about-h4"];
+aboutText[1].textContent = siteContent["main-content"]["about-content"];
 
 
+const BtmCont = mainSection.querySelector('.bottom-content');
 
-const hachFourB = topCont.querySelectorAll('h4');
-const pEEB = topCont.querySelectorAll('p');
-hachFourB[1].textContent = siteContent["main-content"]["about-h4"];
-pEEB[1].textContent = siteContent["main-content"]["about-content"];
+const serTitle = BtmCont.querySelectorAll('h4');
+const serText = BtmCont.querySelectorAll('p');
+serTitle[0].textContent = siteContent["main-content"]["services-h4"];
+serText[0].textContent = siteContent["main-content"]["services-content"];
 
+const proTitle = BtmCont.querySelectorAll('h4');
+const proText = BtmCont.querySelectorAll('p');
+proTitle[1].textContent = siteContent["main-content"]["product-h4"];
+proText[1].textContent = siteContent["main-content"]["product-content"];
 
-// const hachFourB = hachFourA.nextElementSibling;
-// const pEEB = hachFourB.nextElementSibling;
-// const secondconT = textOneA.cloneNode(true);
-// document.querySelector('.text-content').appendChild(secondconT);
+const visTitle = BtmCont.querySelectorAll('h4');
+const visText = BtmCont.querySelectorAll('p');
+visTitle[2].textContent = siteContent["main-content"]["vision-h4"];
+visText[2].textContent = siteContent["main-content"]["vision-content"];
 
-// querySelector('h4');
-// const pEEB = textOneB.querySelector('p');
-
-
-// const BtmCont = mainSection.querySelector('.bottom-content');
-// const textOneB = BtmCont.querySelector('.text-content');
-// const textOne
 // const contactSec = document.querySelector('.contact');
 // const contactSec = document.querySelector('footer');
 // const button = document.querySelector('button');
